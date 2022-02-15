@@ -41,7 +41,8 @@ const (
 	// used carefully, so this flag helps turn it off quickly if needed.
 	//
 	// Use it everywhere needed so we can completely remove unused code blocks.
-	decUseTransient = true
+	// PEH 2/14/22 turning this off because it causes bugs with nested maps
+	decUseTransient = false
 )
 
 var (
